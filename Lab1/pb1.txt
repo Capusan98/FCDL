@@ -1,0 +1,14 @@
+start
+
+cevabun:a;
+cevabun:b;
+cevabun:c;
+
+cevacitit a;
+cevacitit b;
+
+c=a+b;
+
+cevascris c;
+
+stop

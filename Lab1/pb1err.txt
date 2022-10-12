@@ -1,0 +1,10 @@
+start
+
+cevabun = a;
+
+a = a++;
+
+stop
+
+// declaration syntax error on line 3
+// expression syntax error on line 5

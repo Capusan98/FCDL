@@ -1,0 +1,25 @@
+stmtlist    ::= stm | stm{stmtlist}
+stm         ::= decllist | ifstmt | whilestmt | assignstmt 
+program     ::= start[stmtlist]end;
+
+decllist    ::= decl | decl{decllist}
+decl        ::= type":"identifier";"
+
+type_primitive   ::= "cevabun" | "ceva" 
+type_arr  ::= type_primitive"["numconst"]"
+type        ::= type_primitive | type_arr
+
+whilestmt     ::= "totceva" condition "{" stmtlist "}"
+
+ifstmt      ::= "cevadaca" condition "{" stmtlist "}" ["altceva" "{" stmtlist "}"]
+condition   ::= expression relation expression
+relation    ::= "<" | "<=" | "==" | ">" | ">="
+
+iostmt      ::= ("cevacitit" | "cevascris") identifier ";"
+assignstmt  ::= identifier "=" expression ";"
+
+const       ::= numconst | char
+term        ::= const | identifier | identifier"["term"]"
+sym         ::= "+" | "-" | "*" | "/" | "%"
+op          ::= term{ }sym{ }term | "("{ }term{ }sym{ }term{ }")"
+expres      ::= term | op | op sym expres

@@ -1,0 +1,23 @@
+start
+
+cevabun:x;
+
+cevaciti x;
+
+cevabun: prima_cifra;
+cevabun: ultima_cifra;
+
+ultima_cifra = x%10;
+
+totceva x > 9 {
+ x=x/10;
+}
+
+cevadaca prima_cifra > ultima_cifra {
+    cevascris 1;
+}
+altceva {
+    cevascris 0;
+}
+
+stop

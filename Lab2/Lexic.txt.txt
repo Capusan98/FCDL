@@ -1,0 +1,46 @@
+Language Specification:
+ 1. Language Definition:
+  1.1 Alphabet:
+  1.1.a. Upper (A-Z) and lower case letters (a-z) of the English alphabet
+      b. Underline character '_';
+      c. Decimal digits (0-9);
+  Lexic:
+      a.Special symbols, representing:
+         - operators:
+		arithmetic: +, -, *, /, %
+		assignment: =
+        equality testing: ==, !=
+        user defined type:
+        array->list of either ints or chars
+        
+		sequencing: ,
+         - separators [ ] { }  ; : space
+         - reserved words:
+		    char -> ceva
+		    else -> altceva
+		    if -> cevadaca
+		    int -> cevabun 	   
+		    while -> totceva
+            read ->cevacitit
+            write-> cevascris
+            start 
+            stop
+
+
+      b.identifiers
+           -a sequence of letters and digits, such that the first charater is a letter; the rule is:
+           -no more than 256 characters
+             identifier = ["_"]letter[{letter | digit}]
+             letter = "A" | "B" | . ..| "Z" | "a" | "b" | ... | "z"
+             non_zero_digit = "1" |...| "9"
+	         zero_digit = "0" 
+             sign_digit ="+"|"-"
+
+
+      c.constants
+         1.integer:
+              integer = zero_digit | sign_digit {(zero_digit | digit)}
+         2.character:
+             character = 'letter'|'digit'
+       
+         

@@ -1,0 +1,29 @@
+start
+
+cevabun[5] : x;
+cevabun : max;
+cevabun : n;
+cevabun : i;
+
+cevacitit n;
+
+i=0;
+
+totceva i<n{
+    cevacitit x[i];
+    i=i+1;
+} 
+
+max=0;
+i=0;
+
+totceva{
+    cevadaca x[i]>max {
+        max=x[i];
+    }
+    i=i+1;
+}
+
+cevascris max;
+
+stop
