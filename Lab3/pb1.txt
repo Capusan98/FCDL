@@ -1,0 +1,18 @@
+start
+
+cevaint:a;
+cevaint:a1a;
+cevaint:aa1;
+cevaint:a;
+
+cevaint:bd;
+cevaint:c;
+
+cevacitit a;
+cevacitit b;
+
+1c=a+b;
+a=a+1;
+cevascris c;
+
+stop

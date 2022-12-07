@@ -10,3 +10,9 @@ class SymbolTable:
     def get(self, value):
         return self.__sortedList.getId(value)
 
+    def printTable(self):
+        self.__sortedList.PrintList()
+
+    def __str__(self):
+       return str(self.__sortedList)
+

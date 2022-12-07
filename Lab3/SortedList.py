@@ -1,5 +1,6 @@
 from Symbol import Symbol
 
+
 class SortedList:
     def __init__(self):
         self.__list = []
@@ -12,11 +13,15 @@ class SortedList:
         self.__list.append((value, self.__count))
         self.__count += 1
         self.__list = sorted(self.__list)
-        print(self.__list)
-
 
     def getId(self, value):
         for i in self.__list:
             if i[0] == value:
                 return i[1]
         return -1
+
+    def PrintList(self):
+        print(self.__list)
+
+    def __str__(self):
+        return  str(self.__list)
